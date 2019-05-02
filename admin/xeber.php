@@ -15,12 +15,14 @@
                 <div class="row">
                     <div class="form-group">
                      <div class="form-group row">
+                
 
-                        <form action="islem.php" method="post">
+                        <form action="insert.php" method="post">
                         <div class="col-md-6">
-                        Xəbər Basliqi<input type="text" value="<?php echo $row['id_basliq'];  ?>" name="basliq"><br><hr>
-                        Xəbər Mətni<textarea name="metn"  class="ckeditor"><?php echo $row['id_metn'];  ?></textarea><br>
-                        <input type="submit" class="btn btn-primary" value="Yenilə">
+                        Xəbər Başlığı<input type="text" value="" placeholder="Xəbər Başlığın yazın" name="xbasliq"><br><hr>
+                        Xəbərin kiçik Başlığı<input type="text" value="" name="kbasliq"><br><hr>
+                        Xəbər Mətni<textarea name="xeber"  class="ckeditor"></textarea><br>
+                        <input type="submit" class="btn btn-primary" value="Paylaş">
 
                         </div>
                         </form>
