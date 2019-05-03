@@ -20,7 +20,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
   <?php $db= new PDO ("mysql:host=localhost;dbname=blog;charset=utf8","root","");
 
-$query = $db->query("SELECT * FROM xeber", PDO::FETCH_ASSOC);
+$query = $db->query("SELECT * FROM xeber ORDER BY id DESC", PDO::FETCH_ASSOC );
 if ( $query->rowCount() ){
      foreach( $query as $say ){ ?>
           
@@ -35,7 +35,7 @@ if ( $query->rowCount() ){
               </h3>
             </a>
             <p class="post-meta">Posted by
-              <a href="">Start Bootstrap</a>
+              <a href="">Admin</a>
               on September 24, 2018</p>
           </div>
           <hr> 
